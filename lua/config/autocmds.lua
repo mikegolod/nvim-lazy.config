@@ -4,7 +4,7 @@
 vim.api.nvim_create_autocmd({ "FileType" }, {
   pattern = { "go" },
   callback = function()
-    local opt = vim.opt
+    local opt = vim.bo
     opt.expandtab = false
     opt.tabstop = 4
     opt.shiftwidth = 4
